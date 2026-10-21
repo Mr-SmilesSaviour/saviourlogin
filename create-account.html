@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account | Mr. Smylez Tech Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brand">
+    <div class="logo">
+      <img src="logo.svg" alt="Mr. Smylez Tech Solutions logo">
+    </div>
+    <h1>Mr. Smylez Tech Solutions</h1>
+    <span class="badge">Client Portal</span>
+  </header>
+
+  <main class="card">
+    <div class="card-head">
+      <div>
+        <h2>Create Account</h2>
+        <p class="sub">Provide your details to receive a temporary password.</p>
+      </div>
+      <!-- Close button goes back to the login page -->
+      <a href="index.html" class="close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+
+    <form action="#" method="post">
+      <div class="field">
+        <label for="surname">Surname</label>
+        <div class="input-group">
+          <span class="icon"><i class="fa-solid fa-user"></i></span>
+          <input type="text" id="surname" name="surname" placeholder="Surname" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="othernames">Other Names</label>
+        <div class="input-group">
+          <span class="icon"><i class="fa-solid fa-user-tag"></i></span>
+          <input type="text" id="othernames" name="othernames" placeholder="Other names" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone Number</label>
+        <div class="phone-row">
+          <select name="country_code" aria-label="Country code">
+            <option value="+256" selected>Uganda (+256)</option>
+            <option value="+254">Kenya (+254)</option>
+            <option value="+255">Tanzania (+255)</option>
+            <option value="+250">Rwanda (+250)</option>
+            <option value="+211">South Sudan (+211)</option>
+            <option value="+243">DR Congo (+243)</option>
+          </select>
+          <div class="input-group">
+            <span class="icon"><i class="fa-solid fa-phone"></i></span>
+            <input type="tel" id="phone" name="phone" placeholder="0770000000" required>
+          </div>
+        </div>
+        <p class="hint">Use an active phone number to receive notifications.</p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address</label>
+        <div class="input-group">
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" id="email" name="email" placeholder="myemail@gmail.com" required>
+        </div>
+      </div>
+
+      <p class="link-right">
+        <a href="https://accounts.google.com/signup" target="_blank" rel="noopener">
+          Don't have an Email? Click to create <i class="fa-solid fa-circle-arrow-right"></i>
+        </a>
+      </p>
+
+      <div class="card-foot">
+        <a href="index.html" class="btn btn-outline-gray">Close</a>
+        <button type="submit" class="btn btn-blue">
+          <i class="fa-solid fa-user-plus"></i> Create Account
+        </button>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>

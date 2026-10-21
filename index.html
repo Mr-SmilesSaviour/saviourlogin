@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Mr. Smylez Tech Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="brand">
+    <div class="logo">
+      <img src="logo.svg" alt="Mr. Smylez Tech Solutions logo">
+    </div>
+    <h1>Mr.SMYLEZ TECH SOLUTIONS</h1>
+    <span class="badge">Client Portal</span>
+  </header>
+
+  <main class="card">
+    <h2>Welcome Back</h2>
+    <p class="sub">Log in to access your dashboard</p>
+
+    <form action="#" method="post">
+      <div class="field">
+        <label for="email">Email Address</label>
+        <div class="input-group">
+          <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+          <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="input-group">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <button type="button" class="toggle-eye" id="toggleEye" aria-label="Show password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        <i class="fa-solid fa-right-to-bracket"></i> Sign In
+      </button>
+    </form>
+
+    <a href="#" class="forgot"><i class="fa-solid fa-key"></i> Forgot your password?</a>
+
+    <div class="divider"><span>New to the portal?</span></div>
+
+    <div class="actions">
+      <!-- This link opens the create account page -->
+      <a href="create-account.html" class="btn btn-outline-blue">
+        <i class="fa-solid fa-user-plus"></i> Create Account
+      </a>
+      <a href="#" class="btn btn-outline-gray">
+        <i class="fa-solid fa-circle-question"></i> Need Help?
+      </a>
+    </div>
+  </main>
+
+  <!-- Optional: show/hide password -->
+  <script>
+    const eye = document.getElementById('toggleEye');
+    const pw = document.getElementById('password');
+    eye.addEventListener('click', () => {
+      const show = pw.type === 'password';
+      pw.type = show ? 'text' : 'password';
+      eye.innerHTML = show
+        ? '<i class="fa-solid fa-eye-slash"></i>'
+        : '<i class="fa-solid fa-eye"></i>';
+    });
+  </script>
+</body>
+</html>

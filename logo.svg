@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="270 60 990 900" role="img" aria-label="Mr. Smylez Tech Solutions logo">
+  <!-- S mark -->
+  <path fill="#0b1a3a" d="M962,90 L685,90 C600,90 537,160 537,240 C537,320 600,380 680,380 L870,380 C960,380 1025,430 1025,480 C1025,590 920,668 760,668 C660,668 570,610 510,540 L555,480 C575,500 575,520 590,535 C640,590 700,615 760,615 C860,615 945,560 945,480 C945,380 920,303 880,303 L680,303 C640,303 612,275 612,240 C612,200 640,162 685,162 L890,162 Z"/>
+
+  <!-- upper circuit line + teal node -->
+  <line x1="682" y1="235" x2="842" y2="235" stroke="#0b1a3a" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="873" cy="233" r="31" fill="#fff" stroke="#12a4a8" stroke-width="14"/>
+
+  <!-- lower circuit line + teal node -->
+  <line x1="605" y1="440" x2="830" y2="440" stroke="#0b1a3a" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="572" cy="445" r="31" fill="#fff" stroke="#12a4a8" stroke-width="14"/>
+
+  <!-- smile -->
+  <path d="M625,525 Q760,650 900,525" fill="none" stroke="#12a4a8" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- wordmark -->
+  <text x="765" y="828" text-anchor="middle" font-family="'Segoe UI', Poppins, Arial, sans-serif" font-size="185" font-weight="700" fill="#0b1a3a">Mr. Smylez</text>
+  <text x="765" y="925" text-anchor="middle" font-family="'Segoe UI', Poppins, Arial, sans-serif" font-size="62" font-weight="500" letter-spacing="16" fill="#0b1a3a">TECH SOLUTIONS</text>
+</svg>
